@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scholarship Portal</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="sidenav">
+    <a href="#homepage" onclick="showPage('homepage')"> <img src="assets/pfp.jpeg" alt="Homepage" class="icon"> </a>
+    <a href="#p1" onclick="showPage('p1')"> <img src="assets/money.png" alt="Scholarship Dashboard" class="icon">
+    </a>
+    <a href=#p2 onclick="showPage('p2')"> <img src="assets/search.png" alt="Mentor search" class="icon"> </a>
+  </div>
+
+  <div id="homepage" class="page active">
+    <div class="container">
+      <header>
+        <h1>Scholarship Portal</h1>
+      </header>
+      <div id="profile" class="profile">
+        <h2>Profile</h2>
+        <p><strong>Name:</strong> <span id="name"></span></p>
+        <p><strong>Email:</strong> <span id="email"></span></p>
+        <p><strong>Phone:</strong> <span id="phone"></span></p>
+        <p><strong>Bio:</strong> <span id="bio"></span></p>
+      </div>
+      <div id="scholarships" class="scholarships">
+        <h2>Scholarships</h2>
+        <ul id="scholarship-list"></ul>
+      </div>
+      <div id="achievements" class="achievements">
+        <h2>Achievements</h2>
+        <ul id="achievement-list"></ul>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <div id="p1" class="page">
+    <nav class="navbar2">
+      <div class="navbar-brand">ScholarFind</div>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Enter zipcode or city...">
+        <button onclick="searchScholarships()">Search</button>
+      </div>
+    </nav>
+    <div id="scholarship-list"></div>
+    <div class="image-container">
+      <img src="assets/map.jpeg" alt="Map">
+    </div>
+  </div>
+
+  <div id="p2" class="page">
+
+    <div class="mentor-list">
+      <div class="mentor">
+        <p>Name: John Doe</p>
+        <p>Contact Info: johndoe@example.com</p>
+      </div>
+      <div class="mentor">
+        <p>Name: Jane Smith</p>
+        <p>Contact Info: janesmith@example.com</p>
+      </div>
+      <div class="mentor">
+        <p>Name: Alan Brown</p>
+        <p>Contact Info: alanbrown@example.com</p>
+      </div>
+      <div class="mentor">
+        <p>Name: Ada Lovelace</p>
+        <p>Contact Info: adalovelace@example.com</p>
+      </div>
+      <div class="mentor">
+        <p>Name: Alan Turing</p>
+        <p>Contact Info: alanturing@example.com</p>
+      </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
